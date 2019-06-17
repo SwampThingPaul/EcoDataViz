@@ -13,7 +13,7 @@ library(plyr)
 library(reshape)
 
 #Paths
-setwd("D:/UF/TidyTuesday")
+setwd("D:/_GitHub/PseudoTidyTuesday")
 
 paths=paste0(getwd(),c("/Plots/","/Data/"))
 #Folder.Maker(paths);#One and done. Creates folders in working directory.
@@ -35,15 +35,19 @@ sites.dat=ddply(dat,c("siteID","name"),summarise,N.val=N(fraction),min.date=date
 sites.dat$yrs.dat=with(sites.dat,as.numeric(max.date-min.date))*3.17098e-8
 #longterm.sites=subset(sites.dat,yrs.dat>=13)
 longterm.sites=subset(sites.dat,yrs.dat>=13&max.microcystin>300)
+longterm.sites=longterm.sites[order(-longterm.sites$max.microcystin),]
 
 dat=dat[order(dat$sampleDate),]
 dat=subset(dat,siteID%in%longterm.sites$siteID)
 
+
+# Plot --------------------------------------------------------------------
 yrs=seq(2006,2018,1)
 site.labs=paste(unlist(stringr::str_split(longterm.sites$name," Beach "))[seq(1,14,2)],"Beach")
 ylim.val=c(0.05,2000);ymaj=log.scale.fun(ylim.val,"major");ymin=log.scale.fun(ylim.val,"minor")
 xlim.val=c(120,245);by.x=30;xmaj=seq(xlim.val[1],xlim.val[2],by.x);xmin=seq(xlim.val[1],xlim.val[2],by.x/2)
-#tiff(filename=paste0(plot.path,"20190617_iowaDNR_mycrosystin.tiff"),width=7,height=4,units="in",res=200,type="windows",compression=c("lzw"),bg="white")
+#tiff(filename=paste0(plot.path,"tiff/20190617_iowaDNR_mycrosystin.tiff"),width=7,height=4,units="in",res=200,type="windows",compression=c("lzw"),bg="white")
+#png(filename=paste0(plot.path,"png/20190617_iowaDNR_mycrosystin.png"),width=7,height=4,units="in",res=200,type="windows",bg="white")
 par(family="serif",mar=c(1.5,2.25,0.5,0.1),oma=c(2,1.75,0.7,1));
 layout(matrix(1:8,2,4,byrow=T))
 
@@ -79,7 +83,7 @@ legend(0.5,0.5,legend=legend.text,pch=NA,col=leg.cols1,lwd=1.5,lty=c(NA,1,2,2),p
 legend(0.5,0.5,legend=legend.text,pch=c(21,22,21,NA),col=leg.cols2,lwd=0.2,lty=NA,pt.bg=leg.pt.bg,pt.cex=1.5,ncol=1,cex=0.8,bty="n",y.intersp=1.75,x.intersp=0.75,xpd=NA,xjust=0.5,yjust=0.5)
 text(1,0.1,adj=1,font=3,cex=0.5,"Data from Iowa DNR\n(https://programs.iowadnr.gov/aquia/search)\n most recent data up to June 17, 2019")
 
-mtext(side=2,line=0.5,outer=T,"Microcystin (\u03BCg L\u207B\u00B9)")
+mtext(side=2,line=0.5,outer=T,"Total Microcystin (\u03BCg L\u207B\u00B9)")
 mtext(side=1,line=0.5,outer=T,"Day of the Year")
 dev.off()
 
