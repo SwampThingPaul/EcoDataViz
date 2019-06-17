@@ -87,3 +87,37 @@ mtext(side=2,line=0.5,outer=T,"Total Microcystin (\u03BCg L\u207B\u00B9)")
 mtext(side=1,line=0.5,outer=T,"Day of the Year")
 dev.off()
 
+
+
+# additional analyses -----------------------------------------------------
+test.rslt=data.frame()
+test=subset(dat,siteID==longterm.sites$siteID[1])
+for(j in 1:length(yrs)){
+
+}
+
+plot(DOY~CY,test.rslt)
+
+seasonal.peak=data.frame()
+for(i in 1:length(longterm.sites$siteID)){
+  tmp.dat=subset(dat,siteID==longterm.sites$siteID[i])
+  for(j in 1:length(yrs)){
+    max.val=if(nrow(subset(tmp.dat,CY==yrs[j]))==0){
+      tmp.rslt=data.frame(siteID=longterm.sites$siteID[i],CY=yrs[j],max.val=NA,DOY=NA)
+      seasonal.peak=rbind(seasonal.peak,tmp.rslt)
+    }else{
+    max.val=max(subset(tmp.dat,CY==yrs[j])$HalfMDL)
+    DOY.val=subset(tmp.dat,CY==yrs[j]&HalfMDL==max.val)$DOY
+    tmp.rslt=data.frame(siteID=longterm.sites$siteID[i],CY=yrs[j],max.val=max.val,DOY=as.numeric(DOY.val))
+    seasonal.peak=rbind(seasonal.peak,tmp.rslt)
+    }
+  }
+}
+
+par(family="serif",mar=c(1.5,2.25,0.5,0.1),oma=c(2,1.75,0.7,1));
+layout(matrix(1:8,2,4,byrow=T))
+for(i in 1:7){
+plot(DOY~CY,subset(seasonal.peak,siteID==longterm.sites$siteID[i]))
+}
+
+ddply(seasonal.peak,"siteID",summarise,kendall=cor.test(CY,DOY,method="kendall")$estimate,pval=cor.test(CY,DOY,method="kendall")$p.val)
