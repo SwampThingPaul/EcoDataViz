@@ -13,14 +13,15 @@ Much like [TidyTuesday](https://github.com/rfordatascience/tidytuesday), Eco-Dat
 ***
 
 ### 2019-06-18 (Iowa Lake Microcystin Concentration)
-<center>
+
 <img src="./Plots/png/20190617_iowaDNR_microsystin.png" align="center" width = "70%"/>
-</center>
+
 <center> Top seven highest observed historic #microcystin concentrations in Iowa. Looks like some are starting the season with a bang. #HABs.</center>
 <br>
-<center>
+<br>
+
 <img src="./Plots/png/20190617_iowaDNR_Peakmicrosystin.png" align="center" width = "70%"/>
-</center>
+
 <center>Has the annual maximum and timing of the peak Microcystin changed over time in Iowa's top seven highest #microcystin lakes for the 13 years?</center>
 
 ***
