@@ -15,9 +15,17 @@ Much like [TidyTuesday](https://github.com/rfordatascience/tidytuesday), Eco-Dat
 
 ### 2019-06-18 (Iowa Lake Microcystin Concentration)
 
+Q<sub>1</sub> Is the #cyanoHAB season starting earlier this year (2019) than the past 13 year period?
+<br>
+<br>
+
 <img src="./Plots/png/20190617_iowaDNR_microsystin.png" align="center" width = "70%"/>
 
 <center> Top seven highest observed historic #microcystin concentrations in Iowa. Looks like some are starting the season with a bang. #HABs.</center>
+<br>
+<br>
+
+Q<sub>2</sub> Has peak microcystin concentrations shifted to earlier in the year over the 13-year period of record?
 <br>
 <br>
 
