@@ -6,8 +6,9 @@ Much like [TidyTuesday](https://github.com/rfordatascience/tidytuesday), Eco-Dat
 ## Data sets
 
 | Date (Tuesday) | Week Number | Data Source | Data location |
-|:---|:-----|:----|:------|
+|:---|:-----:|:----|:------|
 | 2019-06-18 |<!--format(as.Date("2019-06-18"),"%V")`-->25| [Iowa DNR AQuIA](https://programs.iowadnr.gov/aquia/search) | [queryResults.csv](./Data/20190618/)|
+| 2019-06-25 |<!--format(as.Date("2019-06-25"),"%V")`-->26|  | |
 
 
 ***
