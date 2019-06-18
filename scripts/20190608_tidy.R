@@ -69,7 +69,7 @@ for(i in 1:7){
   lines(x.val,exp(k.pred$fit),lwd=1.75,col="dodgerblue")
   #lines(x.val,LCI,lty=2,lwd=1.75,col="dodgerblue")
   #lines(x.val,UCI,lty=2,lwd=1.75,col="dodgerblue")
-  abline(h=20,lty=2,col="red")
+  abline(h=c(8,20),lty=2,col="red")
   with(subset(dat,CY==2019&siteID==longterm.sites$siteID[i]),lines(DOY,HalfMDL,lty=2,col="indianred1",lwd=1.75))
   with(subset(dat,CY==2019&siteID==longterm.sites$siteID[i]),points(DOY,HalfMDL,pch=21,bg="indianred1",cex=1.25,lwd=0.1))
   if(i%in%c(1:3)){axis_fun(1,line=-0.5,xmaj,xmin,NA)}else{axis_fun(1,line=-0.5,xmaj,xmin,xmaj)}
@@ -77,7 +77,7 @@ for(i in 1:7){
   mtext(side=3,site.labs[i],cex=0.6)
 }
 plot(0:1,0:1,type = 'n', axes = F,xlab=NA, ylab=NA)
-legend.text=c("2006 - 2018 Grab Samples","2006 - 2018 LOESS (\u00B1 95% CI)","2019 Samples","Iowa State advisory threshold")
+legend.text=c("2006 - 2018 Grab Samples","2006 - 2018 LOESS (\u00B1 95% CI)","2019 Samples","Iowa State advisory thresholds")
 leg.pt.bg=c(pts.bg,adjustcolor("dodgerblue1",0.25),"indianred1",NA)
 leg.cols1=c("black","dodgerblue1","indianred1","red")
 leg.cols2=c("black","dodgerblue1","black","red")
