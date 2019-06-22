@@ -8,7 +8,7 @@ Much like [TidyTuesday](https://github.com/rfordatascience/tidytuesday), Eco-Dat
 | Date (Tuesday) | Week Number | Data Source | Data location |
 |:---:|:-----:|:----|:------|
 | 2019-06-18 |<!--format(as.Date("2019-06-18"),"%V")`-->25| [Iowa DNR AQuIA](https://programs.iowadnr.gov/aquia/search) | [queryResults.csv](./Data/20190618/)|
-| 2019-06-25 |<!--format(as.Date("2019-06-25"),"%V")`-->26|  | |
+| 2019-06-25 |<!--format(as.Date("2019-06-25"),"%V")`-->26| [NSIDC](http://nsidc.org/greenland-today/) | [Online Extracted using _rJSON_](https://nsidc.org/greenland-today/greenland-surface-melt-extent-interactive-chart/)|
 
 
 ***
@@ -34,3 +34,11 @@ Q<sub>2</sub> Has peak microcystin concentrations shifted to earlier in the year
 <center>Has the annual maximum and timing of the peak Microcystin changed over time in Iowa's top seven highest #microcystin lakes for the 13 years?</center>
 
 ***
+
+### 2019-06-25 (Greenland Surface Melt Extent)
+
+1. Replicate [Greenland Daily Melt Plot](https://nsidc.org/greenland-today/)
+
+<img src="./Plots/png/20190625_greenland.png" align="center" width = "70%"/>
+
+<center>Calendar year 2019 Greenland surface melt extent relative to the 1979 to 2018 period of record.</center>
