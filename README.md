@@ -44,7 +44,7 @@ Q<sub>2</sub> Has peak microcystin concentrations shifted to earlier in the year
 <center>Calendar year 2019 Greenland surface melt extent relative to the 1979 to 2018 period of record.</center>
 
 <br>
-
+<br>
 Q<sub>1</sub> Has the average trend in Greenland melt area increased?
 
 <img src="./Plots/png/20190625_annualmean_greenland.png" align="center" width = "70%"/>
@@ -52,7 +52,7 @@ Q<sub>1</sub> Has the average trend in Greenland melt area increased?
 <center>Annual average Greenland melt area with 95% confidence interval for calendar year 1979 to 2018. The annual average has significantly increased over this period of record (Kendall Trend analysis: $\tau$ = 0.62; $\rho$ <0.01).</center>
 
 <br>
-
+<br>
 Q<sub>2</sub> Has the peak melt area increased during the period of record?
 
 <img src="./Plots/png/20190625_DOY_peak_greenland.png" align="center" width = "70%"/>
