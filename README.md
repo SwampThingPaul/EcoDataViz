@@ -9,6 +9,7 @@ Much like [TidyTuesday](https://github.com/rfordatascience/tidytuesday), Eco-Dat
 |:---:|:-----:|:----|:------|
 | 2019-06-18 |<!--format(as.Date("2019-06-18"),"%V")`-->25| [Iowa DNR AQuIA](https://programs.iowadnr.gov/aquia/search) | [queryResults.csv](./Data/20190618/)|
 | 2019-06-25 |<!--format(as.Date("2019-06-25"),"%V")`-->26| [NSIDC](http://nsidc.org/greenland-today/) | [Online Extracted using _rJSON_](https://nsidc.org/greenland-today/greenland-surface-melt-extent-interactive-chart/)|
+| 2019-07-01 |<!--format(as.Date("2019-06-25"),"%V")`-->27|  |  |
 
 
 ***
