@@ -114,6 +114,7 @@ greenland.melt.mean$Tp=with(greenland.melt.mean,abs(qt(1-alpha,Df)))
 greenland.melt.mean$LCI=with(greenland.melt.mean,mean.val-sd.val*(Tp/sqrt(N.val)))
 greenland.melt.mean$UCI=with(greenland.melt.mean,mean.val+sd.val*(Tp/sqrt(N.val)))
 
+with(greenland.melt.mean,cor.test(mean.val,CY,method="kendall"))
 
 ylim.val=c(2.5e4,2.5e5);by.y=5e4;ymaj=seq(ylim.val[1],ylim.val[2],by.y);ymin=seq(ylim.val[1],ylim.val[2],by.y/2)
 xlim.val=c(1979,2019);by.x=5;xmaj=seq(xlim.val[1],xlim.val[2],by.x);xmin=seq(xlim.val[1],xlim.val[2],by.x/by.x)
@@ -136,6 +137,7 @@ text(xlim.val[2]+3,ylim.val[1]-5.75e4,adj=1,font=3,cex=0.5,xpd=NA,"\u00B9 Data f
 dev.off()
 
 
+## Day of Peak melt 
 max.melt.CY=data.frame()
 for(i in 1:length(years[1:40])){
   CY.max=max(subset(green.melt,CY==years[i])$MeltArea.sqkm,na.rm=T)
@@ -144,8 +146,20 @@ for(i in 1:length(years[1:40])){
   tmp.dat.final=data.frame(CY=years[i],DOY.max.melt=as.numeric(min(tmp.dat$DOY,na.rm=T)),max.melt=CY.max)
   max.melt.CY=rbind(tmp.dat.final,max.melt.CY)
 }
-
-plot(DOY.max.melt~CY,max.melt.CY,type="b",ylab="Day of Max Melt Area")
 with(max.melt.CY,cor.test(DOY.max.melt,CY,method="kendall"))
 
-plot(MeltArea.sqkm~DOY,subset(green.melt,CY==1995))
+ylim.val=c(150,249);by.y=30;ymaj=seq(ylim.val[1],ylim.val[2],by.y);ymin=seq(ylim.val[1],ylim.val[2],by.y/2)
+xlim.val=c(1979,2019);by.x=5;xmaj=seq(xlim.val[1],xlim.val[2],by.x);xmin=seq(xlim.val[1],xlim.val[2],by.x/by.x)
+#tiff(filename=paste0(plot.path,"tiff/20190625_DOY_peak_greenland.tiff"),width=6,height=4,units="in",res=200,type="windows",compression=c("lzw"),bg="white")
+#png(filename=paste0(plot.path,"png/20190625_DOY_peak_greenland.png"),width=6,height=4,units="in",res=200,type="windows",bg="white")
+par(family="serif",mar=c(1.5,4.5,0.1,0.1),oma=c(2,1.75,0.5,1));
+plot(DOY.max.melt~CY,max.melt.CY,axes=F,ylab=NA,xlab=NA,ylim=ylim.val,xlim=xlim.val,type="n")
+abline(h=ymaj,v=xmaj,lty=3,col="grey80")
+with(max.melt.CY,lines(CY,DOY.max.melt,lty=2,lwd=1.5,col="dodgerblue1"))
+with(max.melt.CY,points(CY,DOY.max.melt,pch=21,lwd=0.01,cex=1.25,bg="dodgerblue1"))
+axis_fun(1,line=-0.5,xmaj,xmin,xmaj)
+axis_fun(2,ymaj,ymin,format(as.Date(ymaj,origin="2018-01-01"),"%B %d"))
+box(lwd=1)
+mtext(side=1,line=2,"Calendar Year")
+mtext(side=2,line=4.25,"Day of Peak Melt")
+dev.off()
