@@ -61,7 +61,7 @@ Q<sub>1</sub> Has the average trend in Greenland melt area increased?
 
 <img src="./Plots/png/20190625_annualmean_greenland.png" align="center" width = "70%"/>
 
-Annual average Greenland melt area with 95% confidence interval for calendar year 1979 to 2018. The annual average has significantly increased over this period of record <p>(Kendall Trend analysis: &tau; = 0.62; <p>&rho; <0.01)</p>.
+Annual average Greenland melt area with 95% confidence interval for calendar year 1979 to 2018. The annual average has significantly increased over this period of record <p>(Kendall Trend analysis: &tau; = 0.62 <p>&rho; <0.01)</p>.
 
 <br>
 <br>
