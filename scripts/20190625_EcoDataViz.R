@@ -51,10 +51,6 @@ green.melt$CY=as.numeric(format(green.melt$Date,"%Y"))
 green.melt=green.melt[order(green.melt$Date),]
 green.melt$CY.cum.melt=with(green.melt,ave(MeltArea.sqkm,CY,FUN=function(x) cumsum(x)))
 
-plot(CY.cum.melt~DOY,subset(green.melt,CY==2017))
-with(subset(green.melt,CY==2019),lines(DOY,CY.cum.melt,col="red"))
-plot(CY.cum.melt~DOY,subset(green.melt,CY==1979))
-with(subset(green.melt,CY==2019),lines(DOY,CY.cum.melt,col="red"))
 
 greenland.ice.area=1710000
 green.melt$MeltArea.per=(green.melt$MeltArea.sqkm/greenland.ice.area)*100
