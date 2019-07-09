@@ -71,6 +71,14 @@ Q<sub>2</sub> Has the peak melt area increased during the period of record?
 
 <center>Day of max melt area between calendar year 1979 to 2018. </center>
 
+***
+<a name="20190709"></a>
+### 2019-07-09 (Arctic Sea Ice Volume)
 
+Using the Pan-Arctic Ice Ocean Modeling and Assimilation System ([PIOMAS](http://psc.apl.uw.edu/research/projects/projections-of-an-ice-diminished-arctic-ocean/)) data you can explore sea-ice thickness and volume changes throughout the years. 
+
+<img src="./Plots/png/20190709_ArcticIce.png" align="center" width = "70%"/>
+
+<center>Daily changes in Arctic sea-ice volume and thickness over a 41 year period (1979 - 2019) using data from the Polar Science Center [PIOMAS Arctic Sea Ice Volume Reanalysis](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) project. </center>
 
 ***
