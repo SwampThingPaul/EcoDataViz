@@ -20,7 +20,7 @@ Paul Julian - [Webpage](http://swampthingecology.org) - [Twitter](https://twitte
 | [2019-06-18](#20190618) |<!--format(as.Date("2019-06-18"),"%V")`-->25| [Iowa DNR AQuIA](https://programs.iowadnr.gov/aquia/search) | [queryResults.csv](./Data/20190618/)|
 | [2019-06-25](#20190625) |<!--format(as.Date("2019-06-25"),"%V")`-->26| [NSIDC](http://nsidc.org/greenland-today/) | [Online Extracted using _rJSON_](https://nsidc.org/greenland-today/greenland-surface-melt-extent-interactive-chart/)|
 | 2019-07-01 |<!--format(as.Date("2019-06-25"),"%V")`-->27| --- | No Data |
-| 2019-07-09 |28| [Polar Science Center](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) |  Pan-Arctic Ice Ocean Modeling and Assimilation System Sea |
+| [2019-07-09](#20190709) |28| [Polar Science Center](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) |  Pan-Arctic Ice Ocean Modeling and Assimilation System Sea |
 
 
 ***
@@ -79,6 +79,6 @@ Using the Pan-Arctic Ice Ocean Modeling and Assimilation System ([PIOMAS](http:/
 
 <img src="./Plots/png/20190709_ArcticIce.png" align="center" width = "70%"/>
 
-<center>Daily changes in Arctic sea-ice volume and thickness over a 41 year period (1979 - 2019) using data from the Polar Science Center [PIOMAS Arctic Sea Ice Volume Reanalysis](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) project. </center>
+Daily changes in Arctic sea-ice volume and thickness over a 41 year period (1979 - 2019) using data from the Polar Science Center [PIOMAS Arctic Sea Ice Volume Reanalysis](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) project. 
 
 ***
