@@ -81,6 +81,6 @@ Using the Pan-Arctic Ice Ocean Modeling and Assimilation System ([PIOMAS](http:/
 
 Daily changes in Arctic sea-ice volume and thickness over a 41 year period (1979 - 2019) using data from the Polar Science Center [PIOMAS Arctic Sea Ice Volume Reanalysis](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) project. 
 
-`R`-script can be found at [this link]("./scripts/20190709_EcoDataViz.R"). 
+`R`-script can be found at [this link](./scripts/20190709_EcoDataViz.R). 
 
 ***
