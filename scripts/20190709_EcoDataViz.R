@@ -16,7 +16,7 @@ library(reshape)
 
 #Paths
 #setwd("D:/_GitHub/PseudoTidyTuesday")
-wd="D:/_GitHub/PseudoTidyTuesday"
+wd="D:/_GitHub/EcoDataViz"
 
 #paths=paste0(getwd(),c("/Plots/","/Data/"))
 paths=paste0(wd,c("/Plots/","/Data/20190709/"))
@@ -36,6 +36,7 @@ vol.dat$Vol_km3=vol.dat$Vol_km3*1E+3
 
 dat=merge(thick.dat,vol.dat,c("Year","Day"))
 dat=dat[order(dat$Year,dat$Day),]
+dat$date1=
 dat$Date=with(dat,date.fun(paste(Year,format(strptime(Day,"%j"),format="%m-%d"),sep="-"),tz="GMT"))
 dat$month.yr=with(dat,date.fun(paste(Year,format(Date,"%m"),01,sep="-"),tz="GMT"))
 dat$decade=((dat$Year)%/%10)*10
