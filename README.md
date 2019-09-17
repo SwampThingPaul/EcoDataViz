@@ -21,6 +21,7 @@ Paul Julian - [Webpage](http://swampthingecology.org) - [Twitter](https://twitte
 | [2019-06-25](#20190625) |<!--format(as.Date("2019-06-25"),"%V")`-->26| [NSIDC](http://nsidc.org/greenland-today/) | [Online Extracted using _rJSON_](https://nsidc.org/greenland-today/greenland-surface-melt-extent-interactive-chart/)|
 | 2019-07-01 |<!--format(as.Date("2019-06-25"),"%V")`-->27| --- | No Data |
 | [2019-07-09](#20190709) |28| [Polar Science Center](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) |  [PIOMAS](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/) |
+| [2019-09-17](#20190917) | 38 | [NSIDC](https://nsidc.org/arcticseaicenews/)| [Online via FTP](ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/) | 
 
 
 ***
@@ -82,5 +83,17 @@ Using the Pan-Arctic Ice Ocean Modeling and Assimilation System ([PIOMAS](http:/
 Daily changes in Arctic sea-ice volume and thickness over a 41 year period (1979 - 2019) using data from the Polar Science Center [PIOMAS Arctic Sea Ice Volume Reanalysis](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) project. 
 
 `R`-script can be found at [this link](./scripts/20190709_EcoDataViz.R). 
+
+***
+<a name="20190917"></a>
+### 2019-09-17 (Arctic Sea Ice Extent)
+
+Using data from the Defense Meterological Satellite Program and Special Sensor Microwave Imager/Sounder the National Snow and Ice Data Center can estimate sea-ice extent for both Arctic and Antartic regions of interest. 
+
+<img src="./Plots/png/20190917_ArcticSeaIce.png" align="center" width = "70%"/>
+
+Daily changes in Arctic sea-ice extent for 2019 realtive to the 1981 - 2010 period of record and the period of record minimum extent (2012) using data from the National Snow & Ice Data Center [ChArctic](https://nsidc.org/arcticseaicenews/about-charctic-data/) program. 
+
+`R`-script can be found at [this link](./scripts/20190917_EcoDataViz.R). 
 
 ***

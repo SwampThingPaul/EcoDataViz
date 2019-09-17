@@ -20,7 +20,7 @@ library(rjson)
 
 #Paths
 #setwd("D:/_GitHub/PseudoTidyTuesday")
-wd="D:/_GitHub/PseudoTidyTuesday"
+wd="D:/_GitHub/EcoDataViz"
 
 #paths=paste0(getwd(),c("/Plots/","/Data/"))
 paths=paste0(wd,c("/Plots/","/Data/20190625/"))
@@ -75,7 +75,7 @@ xlim.val=as.numeric(format(date.range,"%j"));xmaj=as.numeric(format(xmaj.date,"%
 #xlim.val=c(91,305);by.x=60;xmaj=seq(xlim.val[1],xlim.val[2],by.x);xmin=seq(xlim.val[1],xlim.val[2],by.x/2)
 xlab=format(xmaj.date, format="%b")
 #tiff(filename=paste0(plot.path,"tiff/20190625_greenland.tiff"),width=6,height=4,units="in",res=200,type="windows",compression=c("lzw"),bg="white")
-#png(filename=paste0(plot.path,"png/20190625_greenland.png"),width=6,height=4,units="in",res=200,type="windows",bg="white")
+#png(filename=paste0(plot.path,"png/20190625_greenland_20190822.png"),width=6,height=4,units="in",res=200,type="windows",bg="white")
 par(family="serif",mar=c(1.5,2,0.1,0.1),oma=c(2,1.75,0.5,1));
 layout(matrix(1:2,1,2,byrow=T),widths=c(1,0.5))
 
