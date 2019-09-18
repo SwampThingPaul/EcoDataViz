@@ -83,7 +83,7 @@ leg.cols1=c("black","dodgerblue1","indianred1","red")
 leg.cols2=c("black","dodgerblue1","black","red")
 legend(0.5,0.5,legend=legend.text,pch=NA,col=leg.cols1,lwd=1.5,lty=c(NA,1,2,2),pt.bg=leg.pt.bg,pt.cex=1.5,ncol=1,cex=0.8,bty="n",y.intersp=1.75,x.intersp=0.75,xpd=NA,xjust=0.5,yjust=0.5,text.col="white")
 legend(0.5,0.5,legend=legend.text,pch=c(21,22,21,NA),col=leg.cols2,lwd=0.2,lty=NA,pt.bg=leg.pt.bg,pt.cex=1.5,ncol=1,cex=0.8,bty="n",y.intersp=1.75,x.intersp=0.75,xpd=NA,xjust=0.5,yjust=0.5)
-text(1,0.1,adj=1,font=3,cex=0.5,"Data from Iowa DNR\n(https://programs.iowadnr.gov/aquia/search)\n most recent data up to June 17, 2019")
+text(1,0.1,adj=1,font=3,cex=0.5,"Data from Iowa DNR\n(https://programs.iowadnr.gov/aquia/search)\n most recent data up to Sept 18, 2019")
 
 mtext(side=2,line=0.5,outer=T,"Total Microcystin (\u03BCg L\u207B\u00B9)")
 mtext(side=1,line=0.5,outer=T,"Day of the Year")
@@ -143,7 +143,7 @@ for(i in 1:n){labs[i]=paste(mc.conc[i],mc.conc[i+1],sep=" - ")}
 labs[1]="< 5"
 legend(0.5,0.5,legend=rev(labs),pch=c(21),pt.bg=pal,lwd=0.1,lty=NA,pt.cex=pt.cex.vals,ncol=1,cex=1,bty="n",y.intersp=1,x.intersp=0.75,xpd=NA,xjust=0.5,yjust=0.5,
        title="Peak Total Microcystin\nConcentration(\u03BCg L\u207B\u00B9)")
-text(1,0.1,adj=1,font=3,cex=0.5,"Data from Iowa DNR\n(https://programs.iowadnr.gov/aquia/search)\n most recent data up to June 17, 2019")
+text(1,0.1,adj=1,font=3,cex=0.5,"Data from Iowa DNR\n(https://programs.iowadnr.gov/aquia/search)\n most recent data up to Sept 18, 2019")
 mtext(side=2,line=0.5,outer=T,"Day of Year Peak Microcystin Conc.")
 mtext(side=1,line=0.5,outer=T,"Calendar Year")
 dev.off()
