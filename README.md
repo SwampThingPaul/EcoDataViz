@@ -21,7 +21,7 @@ Paul Julian - [Webpage](http://swampthingecology.org) - [Twitter](https://twitte
 | [2019-06-25](#20190625) |<!--format(as.Date("2019-06-25"),"%V")`-->26| [NSIDC](http://nsidc.org/greenland-today/) | [Online Extracted using _rJSON_](https://nsidc.org/greenland-today/greenland-surface-melt-extent-interactive-chart/)|
 | 2019-07-01 |<!--format(as.Date("2019-06-25"),"%V")`-->27| --- | No Data |
 | [2019-07-09](#20190709) |28| [Polar Science Center](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) |  [PIOMAS](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/) |
-| [2019-09-17](#20190917) | 38 | [NSIDC](https://nsidc.org/arcticseaicenews/)| [Online via FTP](ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/) | 
+| [2019-09-17](#20190917) | 38 | [NSIDC](https://nsidc.org/arcticseaicenews/)| Online via FTP (ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/) | 
 
 
 ***
