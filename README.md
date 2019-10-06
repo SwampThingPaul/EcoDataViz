@@ -1,7 +1,7 @@
 # Ecology Data Viz (previously Ecology _#TidyTuesday_)
 [![DOI](https://zenodo.org/badge/192391693.svg)](https://zenodo.org/badge/latestdoi/192391693)
 
-Much like [TidyTuesday](https://github.com/rfordatascience/tidytuesday), Eco-Data Viz is in the spirit of TidyTuesday focusing on working with ecological data in the R-environment with an emphassis on summarizing and displaying ecological data to a broader audience. All are welcome to join in the fun. This is an ever evolving repo, check back soon for new additions.
+Much like [TidyTuesday](https://github.com/rfordatascience/tidytuesday), Eco-Data Viz is in the spirit of TidyTuesday focusing on working with ecological data in the R-environment with an emphasis on summarizing and displaying ecological data to a broader audience. All are welcome to join in the fun. This is an ever evolving repo, check back soon for new additions.
 
 ## Contact
 Paul Julian - [Webpage](http://swampthingecology.org) - [Twitter](https://twitter.com/SwampThingPaul) - [Email](mailto:pauljulianphd@gmail.com)
@@ -22,6 +22,7 @@ Paul Julian - [Webpage](http://swampthingecology.org) - [Twitter](https://twitte
 | 2019-07-01 |<!--format(as.Date("2019-06-25"),"%V")`-->27| --- | No Data |
 | [2019-07-09](#20190709) |28| [Polar Science Center](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) |  [PIOMAS](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/) |
 | [2019-09-17](#20190917) | 38 | [NSIDC](https://nsidc.org/arcticseaicenews/)| Online via FTP (ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/) | 
+| [2019-09-28](#20190928)| 39 | [SFWMD](https://my.sfwmd.gov/dbhydroplsql/show_dbkey_info.main_menu) | [airtemp.csv](./Data/20190928/)|
 
 
 ***
@@ -93,12 +94,24 @@ Associated detailed blog post with all the code and information can be found [he
 <a name="20190917"></a>
 ### 2019-09-17 (Arctic Sea Ice Extent)
 
-Using data from the Defense Meterological Satellite Program and Special Sensor Microwave Imager/Sounder the National Snow and Ice Data Center can estimate sea-ice extent for both Arctic and Antartic regions of interest. 
+Using data from the Defense Meteorological Satellite Program and Special Sensor Microwave Imager/Sounder the National Snow and Ice Data Center can estimate sea-ice extent for both Arctic and Antarctic regions of interest. 
 
 <img src="./Plots/png/20190917_ArcticSeaIce.png" align="center" width = "70%"/>
 
-Daily changes in Arctic sea-ice extent for 2019 realtive to the 1981 - 2010 period of record and the period of record minimum extent (2012) using data from the National Snow & Ice Data Center [ChArctic](https://nsidc.org/arcticseaicenews/about-charctic-data/) program. 
+Daily changes in Arctic sea-ice extent for 2019 relative to the 1981 - 2010 period of record and the period of record minimum extent (2012) using data from the National Snow & Ice Data Center [ChArctic](https://nsidc.org/arcticseaicenews/about-charctic-data/) program. 
 
 `R`-script can be found at [this link](./scripts/20190917_EcoDataViz.R). 
+
+***
+<a name="20190928"></a>
+### 2019-09-28 (Southwest Florida Chill Hours)
+
+Recently I started a project on our property (some progress [pics](https://www.instagram.com/p/B3QBgYkAXOz/?utm_source=ig_web_copy_link)) to put in an apple orchard and native wildflower area. Being in Florida you typically don't think of apples being able to be grown here however a few apple cultivars can successfully be grown in Florida. These cultivars are known as [low-chill apples](https://edis.ifas.ufl.edu/mg368) and require what is known as chilling requirements or the amount of cold temperatures during a period of time. This is known as chill hours or the cumulative umber of hours less than 7<sup>o</sup> C. To understand the potential chill hours we experience in our garden I used data from three of the closest inland weather stations maintained by the South Florida Water Management District for the past 10-years, determined the annual chill hours and computed the upper 95% confidence interval. Based on this analysis we should be able to get enough chill hours to get an apple harvest from our trees once they are ready...assuming the climate doesn't get warmer.
+
+<img src="./Plots/png/20190928_SWFloridaChillHours.png" align="center" width = "70%"/>
+
+Annual (based on Florida water year; May to Apirl) chill hours for inland weather sites within South Florida maintained by the South Florida Water Management District. Data period of record covers May 2008 to Apirl 2019. 
+
+`R`-script can be found at [this link](./scripts/20190928_EcoDataViz.R). 
 
 ***
