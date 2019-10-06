@@ -71,6 +71,9 @@ Q<sub>2</sub> Has the peak melt area increased during the period of record?
 <img src="./Plots/png/20190625_DOY_peak_greenland.png" align="center" width = "70%"/>
 
 <center>Day of max melt area between calendar year 1979 to 2018. </center>
+<br>
+
+Associated detailed blog post with all the code and information can be found [here](https://swampthingecology.org/blog/june-25-2019-eco-dataviz/).
 
 ***
 <a name="20190709"></a>
@@ -83,6 +86,8 @@ Using the Pan-Arctic Ice Ocean Modeling and Assimilation System ([PIOMAS](http:/
 Daily changes in Arctic sea-ice volume and thickness over a 41 year period (1979 - 2019) using data from the Polar Science Center [PIOMAS Arctic Sea Ice Volume Reanalysis](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) project. 
 
 `R`-script can be found at [this link](./scripts/20190709_EcoDataViz.R). 
+
+Associated detailed blog post with all the code and information can be found [here](https://swampthingecology.org/blog/july-9-2019-eco-dataviz/).
 
 ***
 <a name="20190917"></a>
