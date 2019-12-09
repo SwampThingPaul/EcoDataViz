@@ -23,6 +23,7 @@ Paul Julian - [Webpage](http://swampthingecology.org) - [Twitter](https://twitte
 | [2019-07-09](#20190709) |28| [Polar Science Center](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) |  [PIOMAS](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/) |
 | [2019-09-17](#20190917) | 38 | [NSIDC](https://nsidc.org/arcticseaicenews/)| Online via FTP (ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/) | 
 | [2019-09-28](#20190928)| 39 | [SFWMD](https://my.sfwmd.gov/dbhydroplsql/show_dbkey_info.main_menu) | [airtemp.csv](./Data/20190928/)|
+| [2019-12-09](#20191209)| 50 | [NTL LTER] (https://lter.limnology.wisc.edu/node/54999)|[ntl38_v4.csv](./data/20191209)|
 
 
 ***
@@ -113,5 +114,15 @@ Recently I started a project on our property (some progress [pics](https://www.i
 Annual (based on Florida water year; May to Apirl) chill hours for inland weather sites within South Florida maintained by the South Florida Water Management District. Data period of record covers May 2008 to Apirl 2019. 
 
 `R`-script can be found at [this link](./scripts/20190928_EcoDataViz.R). 
+
+***
+<a name="20191209"></a>
+### 2019-12-09 (Lake Mendota Chlorophyll seasonality)
+
+After seeing this twitter [post](https://twitter.com/hildug/status/1204059990241218560?s=20) by [Dr Hilary Dugan](https://dugan.limnology.wisc.edu/) I got curious about the seasonality in chlorophyll-a concentrations within Lake Mendota. Chlorophyll-a concentrations can be used to assess the algal biomass within a given body of water. High chlorophyll-a concentrations can be indicative a an algal bloom. However, this metric does not indicate if it is a nuisance or Harmful Algal Bloom. 
+
+<img src="./Plots/png/20191209_LakeMendotaChlorophyll.png" align="center" width = "70%"/>
+
+Monthly chlorophyll-a concentration estimated by spectrophotometric (green dots) and fluorometric methods with seasonal locally weighted least squares with upper and lower 95% confidence intervals. 
 
 ***
