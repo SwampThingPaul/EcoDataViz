@@ -23,7 +23,7 @@ Paul Julian - [Webpage](http://swampthingecology.org) - [Twitter](https://twitte
 | [2019-07-09](#20190709) |28| [Polar Science Center](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/) |  [PIOMAS](http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/) |
 | [2019-09-17](#20190917) | 38 | [NSIDC](https://nsidc.org/arcticseaicenews/)| Online via FTP (ftp://sidads.colorado.edu/DATASETS/NOAA/G02135/) | 
 | [2019-09-28](#20190928)| 39 | [SFWMD](https://my.sfwmd.gov/dbhydroplsql/show_dbkey_info.main_menu) | [airtemp.csv](./Data/20190928/)|
-| [2019-12-09](#20191209)| 50 | [NTL LTER] (https://lter.limnology.wisc.edu/node/54999)|[ntl38_v4.csv](./data/20191209)|
+| [2019-12-09](#20191209)| 50 | [NTL LTER](https://lter.limnology.wisc.edu/node/54999) |[ntl38_v4.csv](./data/20191209)|
 
 
 ***
