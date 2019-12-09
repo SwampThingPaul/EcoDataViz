@@ -119,7 +119,7 @@ Annual (based on Florida water year; May to Apirl) chill hours for inland weathe
 <a name="20191209"></a>
 ### 2019-12-09 (Lake Mendota Chlorophyll seasonality)
 
-After seeing this twitter [post](https://twitter.com/hildug/status/1204059990241218560?s=20) by [Dr Hilary Dugan](https://dugan.limnology.wisc.edu/) I got curious about the seasonality in chlorophyll-a concentrations within Lake Mendota. Chlorophyll-a concentrations can be used to assess the algal biomass within a given body of water. High chlorophyll-a concentrations can be indicative a an algal bloom. However, this metric does not indicate if it is a nuisance or Harmful Algal Bloom. 
+After seeing this twitter [post](https://twitter.com/hildug/status/1204059990241218560?s=20) by [Dr Hilary Dugan](https://dugan.limnology.wisc.edu/) I got curious about the seasonality in chlorophyll-a concentrations within Lake Mendota. Chlorophyll-a concentrations can be used to assess the algal biomass within a given body of water. High chlorophyll-a concentrations can be indicative of an algal bloom. However, this metric does not indicate if it is a nuisance or Harmful Algal Bloom. 
 
 <img src="./Plots/png/20191209_LakeMendotaChlorophyll.png" align="center" width = "70%"/>
 
